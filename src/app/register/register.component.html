@@ -1,0 +1,43 @@
+<h1>Register</h1>
+
+<div class="flex-container" [formGroup]="registerForm" >
+
+  <div class="col1">
+    
+    <label >First Name:</label><br>
+    <input type="text" formControlName='first_name' placeholder="enter first name" >
+    <span class="err" *ngIf="registerForm.get('first_name').invalid && registerForm.get('first_name').touched">required</span><br/>
+
+    <label>Email address:</label> <br>
+    <input type="email" formControlName='email' placeholder="Enter email" ><br>
+    <span class="err" *ngIf="registerForm.get('email').invalid && registerForm.get('email').touched">required</span><br/>
+
+    <label>Address:</label> <br>
+    <input type="text" formControlName='address' placeholder="Enter address"><br>
+    <span class="err" *ngIf="registerForm.get('address').invalid && registerForm.get('address').touched">required</span><br/>
+
+    <label>Password:</label> <br>
+    <input placeholder='Enter password' type="password" name="password" formControlName='password'><br>
+    <span class="err" *ngIf="registerForm.get('password').invalid && registerForm.get('password').touched">required</span><br/>
+  </div>
+  <div class="col2">
+    <label>Last name:</label> <br>
+    <input type="text" formControlName='last_name' placeholder="Enter last name"><br>
+    <span class="err" *ngIf="registerForm.get('last_name').invalid && registerForm.get('last_name').touched">required</span><br/>
+
+    <label>Phone number:</label> <br>
+    <input type="tel" formControlName='phone_no' placeholder="Enter phone number"><br>
+    <span class="err" *ngIf="registerForm.get('phone_no').invalid && registerForm.get('phone_no').touched">required</span><br/>
+
+    <label>Brief medical history of patient(optional):</label> <br>
+    <input type="text" formControlName='medical_history' ><br>
+    <label>Confirm Password:</label> <br>
+    <input type="password" formControlName='confirmpassword' placeholder="Confirm password" name="confirmpassword" appConfirmPasswordValidator='password' required/>
+    <div *ngIf="registerForm.get('confirmpassword').hasError('notEqual')">Password and Confirm Password do not match!</div> 
+  </div>
+
+</div>
+<div class="btn">
+<button type="submit" [disabled]="!registerForm.valid" class="button" (click)='onRegister()'>Register</button>
+<p>Already registered?<a routerLink='/login'>Login</a></p>
+</div>

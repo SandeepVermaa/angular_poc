@@ -1,0 +1,14 @@
+<div class="outer">
+  <ul>
+      <li class="dropdown">
+        <a  class="dropbtn"> {{title}} </a>
+        <div class="dropdown-content">
+          <a routerLink='profile'>My Profile</a>
+          <a routerLink='bookings' >My Bookings ({{sum}}) </a>
+          <a routerLink='faqs' >FAQs</a>
+          <a routerLink='login' (click)='onLogout()'>Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

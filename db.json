@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "first_name": "hemant",
+      "last_name": "verma",
+      "email": "b@r",
+      "phone_no": "2194156148564",
+      "address": "idk",
+      "medical_history": "fine",
+      "password": "iluvjigpuff",
+      "confirm_password": "mai ni daalunga same",
+      "id": 2
+    },
+    {
+      "first_name": "Sandeep",
+      "last_name": "Verma",
+      "email": "s@v.com",
+      "phone_no": "9896797279",
+      "address": "244a,ambala",
+      "medical_history": "allnot well",
+      "password": "123456",
+      "confirm_password": "123456",
+      "id": 3
+    },
+    {
+      "first_name": "Hemant",
+      "last_name": "Verma",
+      "email": "h@v.com",
+      "phone_no": "8569995622",
+      "address": "244a,ambala",
+      "medical_history": "null",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 4
+    },
+    {
+      "first_name": "bhanu",
+      "last_name": "pratap",
+      "email": "b@p.com",
+      "phone_no": "62612",
+      "address": "ddc",
+      "medical_history": "dc",
+      "password": "123456",
+      "confirmpassword": "123456",
+      "id": 5
+    },
+    {
+      "first_name": "saasd",
+      "last_name": "shrivastav",
+      "email": "s@s.com",
+      "phone_no": "9936176093",
+      "address": "pal dhabha k piche",
+      "medical_history": "migrane",
+      "password": "123",
+      "id": 6
+    }
+  ],
+  "upcoming": [
+    {
+      "Date": "27 NOVEMBER 2019",
+      "add": "Sector 4, MDC Sector 4, Panchkula, Haryana 134114",
+      "name": "Rohit "
+    },
+    {
+      "Date": "4 MAY 2019",
+      "add": "Sector 28, RDC SECTOR 28, Chandigarh, Chandigarh 160019",
+      "name": "Sandeep Verma"
+    },
+    {
+      "Date": "27 JUNE 2019",
+      "add": "Sector 31, MDC Sector 45, gurgaon, Haryana 134114",
+      "name": "Bhanu Rai"
+    }
+  ],
+  "past": [
+    {
+      "Date": "19 Oct 2018",
+      "add": "Sector 4, MDC Sector 4, Panchkula, Haryana 134114",
+      "name": "Amitabh Bachan"
+    },
+    {
+      "Date": "5 Apr 2018",
+      "add": "Sector 28, RDC SECTOR 28, Chandigarh, Chandigarh 160019",
+      "name": "SHahrukh Khan"
+    },
+    {
+      "Date": "27 JUNE 2017",
+      "add": "Sector 31, MDC Sector 45, gurgaon, Haryana 134114",
+      "name": "Aamir Khan"
+    }
+  ],
+  "FAQ": [
+    {
+      "question": "What do we do?",
+      "answer": "We provide home nursing service. Our nurses are highly qualified."
+    },
+    {
+      "question": "When to expect our nurses to reach?",
+      "answer": "We provide 24x7 service and we try"
+    },
+    {
+      "question": "I took a CE test and my certificate will not print. What should I do?",
+      "answer": "After successfully taking the test with a score of 75% or greater, your course will automatically move to the “My transcripts” page. To view your transcript, click on the button next to the title to view your certificate and print it. You can email, print, or view the certificate as a PDF."
+    }
+  ]
+}

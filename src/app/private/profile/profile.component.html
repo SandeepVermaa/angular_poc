@@ -1,0 +1,37 @@
+
+
+<div class="flex-container" [formGroup]="profileForm" >
+
+  <div class="col1">
+
+    <label >First Name:</label><br>
+    <input type="text" formControlName='first_name' placeholder="enter first name"><br>
+
+    <label>Email address:</label> <br>
+    <input type="email" formControlName='email' placeholder="Enter email" ><br>
+
+    <label>Address:</label> <br>
+    <input type="text" formControlName='address' placeholder="Enter address"><br>
+    
+
+  </div>
+
+  <div class="col2">
+
+    <label >Last Name:</label><br>
+    <input type="text" formControlName='last_name' placeholder="enter last name"><br>
+
+    <label>Phone number:</label> <br>
+    <input type="tel" formControlName='phone_no' placeholder="Enter phone number"><br>
+
+    <label>Brief medical history of patient(optional):</label> <br>
+    <input type="text" formControlName='medical_history' ><br>
+
+      
+   
+
+  </div>
+  
+
+</div>
+<div class='btn'><button type="submit" [disabled]="!profileForm.valid" class="button" (click)='onUpdate()'>Update Profile</button></div>

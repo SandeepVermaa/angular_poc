@@ -1,0 +1,27 @@
+<div class='outbox'>
+  <div class="container-fluid">
+    <ul>
+      <li (click)='onUpcoming()'><a>Upcoming</a></li>
+      <!-- <span> -->&nbsp;&nbsp;
+          <li (click)='onPast()'><a>Past</a></li>
+      <!-- </span> -->
+    </ul>
+  </div>
+  <!-- <button (click)='onUpcoming()'>Upcoming
+  <span><button (click)='onPast()'>Past</button></span> -->
+
+  <div *ngIf="booking else past">
+    <ul style="list-style-type:none" *ngFor="let booking of upcomingBookings">
+      <li id="date">{{booking.Date}}<span id="s">Pending</span></li>
+      <li id="name">{{booking.name}}</li>
+      <li id="add">{{booking.add}}</li>
+    </ul>
+  </div>
+  <ng-template #past>
+    <ul style="list-style-type:none" *ngFor="let booking of pastBookings">
+      <li id="date">{{booking.Date}}<span id="s">Completed</span></li>
+      <li id="name">{{booking.name}}</li>
+      <li id="add">{{booking.add}}</li>
+    </ul>
+  </ng-template>
+</div>
